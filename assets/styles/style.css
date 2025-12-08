@@ -75,6 +75,14 @@ blockquote{
     }
 
 /* WHAT WE OFFER SECTION */
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+}
 .what-we-offer-section{
     display: flex;
     flex-direction: row;
@@ -138,6 +146,11 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: var(--secondary-red);
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
