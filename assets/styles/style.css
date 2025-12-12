@@ -87,7 +87,7 @@ blockquote{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10dvh 15dvh;
+    margin: 10dvh 10dvh;
 }
 .what-we-offer-section h2{
     font-size: 40px;
@@ -208,4 +208,71 @@ footer a:hover{
     height: 400px;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+}
+.about-us-section{
+    font-size: 20px;
+    line-height: 1.6;
+}
+.about-us-main{
+    display: flex;
+    padding: 100px 10dvh;
+    justify-content: center;
+
+}
+.about-us-main img{
+    height: 400px;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 15px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* SERVICES PAGE */
+.services-main{
+    padding: 100px 10dvh;
+}
+.cards-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.card{
+    width: 25%;
+    background-color: var(--primary-red);
+    color: #fff;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 15px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    text-align: center;
+}
+.services-p{
+    font-size: 20px;
+}
+#prices-section table{
+    width: 90%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+#prices-section td, #prices-section table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+#prices-section td:nth-child(1){
+    font-weight: 600;
+}
+#prices-section thead{
+    background-color: var(--primary-red);
+    color: #fff;
+    font-weight: 600;
 }
