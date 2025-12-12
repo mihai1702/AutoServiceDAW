@@ -1,4 +1,5 @@
 ***Site de prezentare - AutoService***
+
 Acest proiect reprezinta un website de prezentare pentru un service auto fictiv, numit AutoService. Scopul website-ului este de a oferi clientilor informatii despre firma, serviciile oferite, preturi precum si posibilitatea de a lua legatura cu firma prin intermediul unei pagini de contact. 
 
 ------------
