@@ -10,6 +10,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #000;
 }
+
+/* HEADER */
 header{
     background-color: var(--primary-bg);
     width: 60%;
@@ -153,8 +155,6 @@ footer a:hover{
     gap: 15px;
 }
 
-
-
 /* CONTACT PAGE */
 .contact-page{
     display: flex;
@@ -256,23 +256,80 @@ footer a:hover{
 .services-p{
     font-size: 20px;
 }
+
+/* PRICES SECTION */
+#prices-section{
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9e9e9 100%);
+    padding: 60px 40px;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+#prices-section h1{
+    text-align: center;
+    color: var(--primary-red);
+    margin-bottom: 40px;
+    font-size: 32px;
+}
 #prices-section table{
-    width: 90%;
-    justify-content: space-between;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-}
-#prices-section td, #prices-section table{
-    border: 1px solid black;
     border-collapse: collapse;
-    padding: 10px;
-    text-align: left;
-}
-#prices-section td:nth-child(1){
-    font-weight: 600;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
 }
 #prices-section thead{
     background-color: var(--primary-red);
-    color: #fff;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 16px;
 }
+#prices-section thead td{
+    color: #fff;
+}
+#prices-section tbody tr{
+    border-bottom: 1px solid var(--primary-bg);
+    transition: background-color 0.3s ease;
+}
+#prices-section tbody tr:hover{
+    background-color: var(--secondary-bg);
+}
+
+#prices-section td{
+    padding: 16px 20px;
+    text-align: left;
+    color: #333;
+}
+#prices-section tbody td:nth-child(1){
+    font-weight: 600;
+    color: var(--primary-red);
+}
+#prices-section tbody td:nth-child(3){
+    font-weight: 700;
+    color: var(--secondary-red);
+    font-size: 17px;
+}
+
+/* TOTAL PRICE SECTION */
+#total-price-section{
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%);
+    color: #fff;
+    padding: 60px 40px;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(129, 0, 0, 0.3);
+}
+#total-price-section h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+#total-price-section h2{
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;}

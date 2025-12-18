@@ -67,11 +67,15 @@ function calculateTotalPrice(){
     });
     return total;
 }
+function calculateDiscountedPrice(){
+    const totalPrice = calculateTotalPrice();
+    return totalPrice * 0.85;
+}
 
-function DisplayTotalPrice(){
+function DisplayTotalAndDiscountedPrice(){
     const totalPriceContainer = document.getElementById('total-price-section');
     const totalPrice = calculateTotalPrice();
-    const discountedPrice = totalPrice * 0.85;
+    const discountedPrice = calculateDiscountedPrice();
     const totalPriceElement = document.createElement('h2');
     totalPriceElement.textContent = "Pret total estimativ pentru toate serviciile: " + totalPrice + " RON";
     totalPriceContainer.appendChild(totalPriceElement);
@@ -80,9 +84,10 @@ function DisplayTotalPrice(){
     discountedPriceElement.textContent = "Daca optati pentru toate serviciile mentionate, beneficiati de 15% discount, asadar pretul final va fi de doar: " + discountedPrice.toFixed(2) + " RON";
     totalPriceContainer.appendChild(discountedPriceElement);
 }
+
 window.onload = function() {
     DisplayServices();
-    DisplayTotalPrice();
+    DisplayTotalAndDiscountedPrice();
 
 };
 
